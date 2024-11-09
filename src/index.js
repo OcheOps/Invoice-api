@@ -8,15 +8,15 @@ const connectDB = require('./config/database');
 
 const app = express();
 
-// Connect to Database
+
 connectDB();
 
-// Middleware
+
 app.use(cors());
 app.use(helmet());
 app.use(express.json());
 
-// Swagger configuration
+
 const swaggerOptions = {
   definition: {
     openapi: '3.0.0',
@@ -37,7 +37,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-// Routes
+
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/invoices', require('./routes/invoiceRoutes'));
 
