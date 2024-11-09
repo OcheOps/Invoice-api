@@ -1,0 +1,11 @@
+{
+  "name": "invoice-api",
+  "version": "1.0.0",
+  "description": "Streamlined Invoicing Management Microservice API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "oche",
+  "license": "ISC"
+}
