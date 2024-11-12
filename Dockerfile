@@ -16,5 +16,8 @@ COPY . .
 # Expose the port that the application will listen on
 EXPOSE 3000
 
+# Set the default URL to /api-docs
+ENV URL_PREFIX=/api-docs
+
 # Run the command to start the application when the container is launched
 CMD ["node", "src/index.js"]
