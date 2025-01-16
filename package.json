@@ -16,7 +16,7 @@
     "express-validator": "^6.12.1",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.0",
+    "mongoose": "^8.9.5",
     "pdfkit": "^0.13.0",
     "swagger-jsdoc": "5.0.1",
     "swagger-ui-express": "^4.6.3"
